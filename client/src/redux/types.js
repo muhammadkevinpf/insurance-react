@@ -1,0 +1,3 @@
+export const ORDER_PRODUCT = "ORDER_PRODUCT";
+export const SET_PRODUCT = "SET_PRODUCT";
+export const LOADING_PRODUCT = "LOADING_PRODUCT";

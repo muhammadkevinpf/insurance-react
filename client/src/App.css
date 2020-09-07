@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Spartan:wght@600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #6c63ff;
+}
+
+.container {
+  padding: 2vw 4vw;
+}
+
+.wrapper {
+  max-width: 100vw;
+  height: 90vh;
+}
+
+.ant-table-cell:nth-child(4) {
+  text-transform: capitalize;
+}
+
+@media (max-width: 576px) {
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+}
