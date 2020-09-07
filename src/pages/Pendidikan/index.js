@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import LayoutAsuransi from "../../layout/KategoriAsuransi";
 import { useParams } from "react-router-dom";
-import Biodata from "../../components/Biodata";
 import { Form, Select, Button, InputNumber, Input, Divider } from "antd";
 // import { rupiahFormatter } from "../../util/insurance";
 import { PlusOutlined } from "@ant-design/icons";

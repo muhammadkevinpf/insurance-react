@@ -2,21 +2,20 @@ import React from "react";
 import LayoutAsuransi from "../../layout/KategoriAsuransi";
 import { useParams } from "react-router-dom";
 import { Form, InputNumber, Button } from "antd";
-import { rupiahFormatter } from "../../util/insurance";
 import Biodata from "../../components/Biodata";
 
 function Kesehatan() {
   const { kategori } = useParams();
 
-  const markUpBiaya = () => {
-    if (kategori === "regular") {
-      return rupiahFormatter(300000);
-    } else if (kategori === "premium") {
-      return rupiahFormatter(500000);
-    } else {
-      return rupiahFormatter(1000000);
-    }
-  };
+  // const markUpBiaya = () => {
+  //   if (kategori === "regular") {
+  //     return rupiahFormatter(300000);
+  //   } else if (kategori === "premium") {
+  //     return rupiahFormatter(500000);
+  //   } else {
+  //     return rupiahFormatter(1000000);
+  //   }
+  // };
 
   return (
     <LayoutAsuransi kategori={kategori} tipe="kesehatan">
@@ -32,10 +31,6 @@ function Kesehatan() {
           <InputNumber min="10" max="20" />
         </Form.Item>
         <span> Tahun</span>
-      </Form.Item>
-
-      <Form.Item label="Biaya" style={{ fontWeight: "bold", fontSize: "14px" }}>
-        <h3 style={{ marginBottom: 0 }}>{markUpBiaya()} / bulan</h3>
       </Form.Item>
 
       <Form.Item wrapperCol={{ span: 4, offset: 20 }}>
